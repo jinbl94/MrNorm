@@ -179,7 +179,7 @@ public class GameScreen extends Screen{
 			headPixmap=Assets.headRight;
 		x=head.x*32;
 		y=head.y*32;
-		graphics.drawPixmap(headPixmap,x-headPixmap.getWidth()/2,y-headPixmap.getHeight()/2);
+		graphics.drawPixmap(headPixmap,x-headPixmap.getWidth()/4,y-headPixmap.getHeight()/4);
 	}
 
 	private void drawReadyUI(){
