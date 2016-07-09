@@ -45,8 +45,8 @@ public class World{
 		while(true){
 			if(!fields[stainX][stainY])
 				break;
-			stainX=(stainX+1)%(WORLD_WIDTH+1);
-			stainY=(stainY+1)%(WORLD_HEIGHT+1);
+			stainX=(stainX+1)%(WORLD_WIDTH);
+			stainY=(stainY+1)%(WORLD_HEIGHT);
 		}
 		stain=new Stain(stainX,stainY,random.nextInt(3));
 	}

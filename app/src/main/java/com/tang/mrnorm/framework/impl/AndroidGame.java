@@ -36,6 +36,7 @@ public class AndroidGame extends Activity implements Game{
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+		getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
 		boolean isLandscape=getResources().getConfiguration().orientation==Configuration.ORIENTATION_LANDSCAPE;
 		int frameBufferWidth=isLandscape?480:320;
