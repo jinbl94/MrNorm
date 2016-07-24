@@ -113,7 +113,6 @@ public class AndroidGame extends Activity implements Game{
 	}
 
 	public Screen getStartScreen(){
-		//todo:
 		return null;
 	}
 }
